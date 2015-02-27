@@ -1,0 +1,16 @@
+limits :
+    start: 1.0
+    end: 8.0
+equation:
+    d2u: 11.0
+    du: 3.0
+    u: -7.0
+    rightSide: 0.0
+elemsNum: 40
+borderConditions:
+    left:
+        type: 'dirichlet'
+        value: -6.0
+    right:
+        type: 'neumann'
+        value: -6.0
