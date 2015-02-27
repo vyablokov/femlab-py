@@ -7,7 +7,13 @@ class Kind(Enum):
 
 class Condition:
     def __init__(self, kind, value):
-        self.kind = kind
+        self.kind = None
+        if kind == 'dirichlet':
+            self.kind = Kind.dirichlet
+        if kind == 'neumann':
+            self.kind = Kind.neumann
+        if kind == 'robin':
+            self.kind = Kind.robin
         self.value = value
 
 class FemStatement:

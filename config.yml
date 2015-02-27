@@ -4,9 +4,9 @@ limits :
 equation:
     d2u: 11.0
     du: 3.0
-    u: -7.0
-    rightSide: 0.0
-elemsNum: 40
+    u: 0.0
+    rightSide: 7.0
+elemsNum: 20000
 borderConditions:
     left:
         type: 'dirichlet'
